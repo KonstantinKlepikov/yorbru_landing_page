@@ -2,6 +2,8 @@ sass:
   load_paths:
     - _sass
     - node_modules
+include:
+  - .htaccess
 exclude: 
   - node_modules
   - LICENSE
@@ -10,3 +12,5 @@ exclude:
   - package.json
   - package-lock.json
   - yarn.lock
+baseurl:
+  ""

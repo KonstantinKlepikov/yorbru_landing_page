@@ -1,0 +1,205 @@
+// //using custom variable 
+// .content {
+//     font-size: $custom-font-size; 
+// }
+
+// //using Bootstrap variable
+// .primarycolor{
+//     color: $primary; 
+// }
+
+// custom css
+.body-font {
+    // font-family: 'Casper';
+    font-family: 'Open Sans', sans-serif;
+}
+// background imafe
+#section0 {
+    background-image: url(/assets/img/myphoto.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+// navbar social ico margin
+.nav-rm-custom {
+    margin-right: 10px;
+}
+// social ico size
+.nav-ico-custom {
+    width: 22px;
+    height: 22px;
+}
+// arrows right/left margin
+.fp-controlArrow.fp-next {
+    margin-right: 35px;
+}
+.fp-controlArrow.fp-prev {
+    margin-left: 35px;}
+// visibility of arrows
+.fp-controlArrow {
+    display: none !important;
+    @media (min-width: 992px) {
+        display: block !important; 
+    }
+}
+// colors of navigate points
+#fp-nav ul li a span, #menu-line, .fp-slidesNav ul li a span {
+    background: $white;
+}
+// right navigate
+#fp-nav.fp-right>ul>li {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+// bottom navigate
+.fp-slidesNav.fp-bottom {
+    text-align: center;
+    @include media-breakpoint-down(lg) {
+        padding-bottom: 30px;
+    }
+    @include media-breakpoint-up(lg) {
+        padding-bottom: 50px;
+    }
+}
+.fp-slidesNav.fp-bottom>ul>li {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+// bottom subscribe
+#navbarTogglerBottom {
+    @include media-breakpoint-down(md) {
+        background: $white;
+        color: $grey;
+    }
+}
+#btnMd {
+    @include media-breakpoint-down(md) {
+        color: #fff;
+        background-color: #dc3545;
+        border-color: #dc3545;
+    }
+}
+#btnMd:hover {
+    @include media-breakpoint-down(md) {
+        color: #fff;
+        background-color: #c82333;
+        border-color: #bd2130;
+    }
+}
+#btnMd:focus, #btnMd.focus {
+    @include media-breakpoint-down(md) {
+        box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
+    }
+}
+#bottomToogler {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#fff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); 
+}
+// code block
+.code {
+    padding-left: 3vh;
+    padding-right: 3vh;
+}
+.code-block {
+    @extend .code;
+    @include media-breakpoint-up(lg) {
+        padding-right: 9vh;
+    }
+    @include media-breakpoint-up(xl) {
+        padding-right: 6.5vh;
+    }
+}
+.code-text {
+    @extend .code;
+    @include media-breakpoint-up(lg) {
+        padding-left: 9vh;
+    }
+    @include media-breakpoint-up(xl) {
+        padding-left: 6.5vh;
+    }
+}
+.code-inside-text {
+    padding-left: 15px;
+}
+// responsive image
+.resp-block {
+    padding-left: 3vh;
+    padding-right: 3vh;
+    @include media-breakpoint-up(lg) {
+        padding-left: 9vh;
+        padding-right: 9vh;
+    }
+    @include media-breakpoint-up(xl) {
+        padding-left: 6vh;
+        padding-right: 6vh;
+    }
+}
+.resp-block>p {
+    margin-bottom: 2vh;
+}
+.resp-block>.h5 {
+    margin-bottom: 4vh;
+}
+// headlines
+.resp-text {
+    @include media-breakpoint-down(lg) {
+        font-size: 2.5rem;
+    }
+    @include media-breakpoint-up(lg) {
+        font-size: 3rem;
+    }
+    @include media-breakpoint-up(xl) {
+        font-size: 3.5rem;
+    }
+}
+.header-text {
+    @extend .resp-text;
+    @include media-breakpoint-down(lg) {
+        font-size: 2rem;
+    }
+}
+// code-navbar
+.code-navbar {
+    display: block;
+    padding: 0.5rem 0.5rem;
+}
+.nav>li:first-child>.code-navbar {
+    padding-left: 1rem;
+}
+.nav>li:nth-last-child(2)>.code-navbar {
+    padding-right: 1rem;
+}
+.code-navbar-actions {
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    box-shadow: 0 0 10px 1px;
+    display: inline-block;
+}
+.code-navbar-1 {
+    background: red;
+}
+.code-navbar-2 {
+    background: #ff0;
+}
+.code-navbar-3 {
+    background: green;
+}
+.code-navbar-tab {
+    background: #fff;
+    padding: 0.5rem 1rem;
+}
+// modal
+.modal-header {
+    border-bottom-color: #fff;
+    border-bottom-width: 0;
+}
+.modal-footer {
+    border-top-color: #fff;
+    border-top-width: 0;
+}
+#yorbInput, #yorbTextarea {
+    margin-top: 20px;
+}
+.modal-body {
+    padding-bottom: 0;
+}

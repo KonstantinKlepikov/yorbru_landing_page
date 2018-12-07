@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /support
+Disallow: /support/
+Disallow: /error
+Disallow: /error/
+Host: https://yorb.ru
