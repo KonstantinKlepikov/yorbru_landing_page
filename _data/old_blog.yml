@@ -1,0 +1,14 @@
+- link: https://blog.yorb.ru/itak-vi-zapuskaete-email-marketing/
+  text: Итак, вы запускаете email-маркетинг. Какие письма сделать в первую очередь?
+  imgurl: /assets/img/slide1.jpg
+  hidden:
+ 
+- link: https://blog.yorb.ru/html-pisma-kak-ne-popastsja-na-obrshanija/
+  text: Html-письма. Как не попасться на обещания и быстро проверить верстальщика?
+  imgurl: /assets/img/slide2.jpg
+  hidden: d-none d-lg-block
+
+- link: https://blog.yorb.ru/kak-preodolet-strah-i-sdelat-horoshie-knopki-dlja-html-pisem/
+  text: Как преодолеть страх и сделать хорошие кнопки для html-писем?
+  imgurl: /assets/img/slide3.jpg
+  hidden: d-none d-lg-block

@@ -1,16 +1,5 @@
-// //using custom variable 
-// .content {
-//     font-size: $custom-font-size; 
-// }
-
-// //using Bootstrap variable
-// .primarycolor{
-//     color: $primary; 
-// }
-
 // custom css
 .body-font {
-    // font-family: 'Casper';
     font-family: 'Open Sans', sans-serif;
 }
 // background imafe
@@ -51,11 +40,14 @@
     margin-top: 30px;
     margin-bottom: 30px;
 }
+.custom-hide~#fp-nav {
+    visibility: hidden;
+}
 // bottom navigate
 .fp-slidesNav.fp-bottom {
     text-align: center;
     @include media-breakpoint-down(lg) {
-        padding-bottom: 30px;
+        padding-bottom: 20px;
     }
     @include media-breakpoint-up(lg) {
         padding-bottom: 50px;
@@ -72,21 +64,21 @@
         color: $grey;
     }
 }
-#btnMd {
+#mc-embedded-subscribe {
     @include media-breakpoint-down(md) {
-        color: #fff;
-        background-color: #dc3545;
+        color: #dc3545;
+        background-color: #fff;
         border-color: #dc3545;
     }
 }
-#btnMd:hover {
+#mc-embedded-subscribe:hover {
     @include media-breakpoint-down(md) {
         color: #fff;
         background-color: #c82333;
         border-color: #bd2130;
     }
 }
-#btnMd:focus, #btnMd.focus {
+#mc-embedded-subscribe:focus, #mc-embedded-subscribe.focus {
     @include media-breakpoint-down(md) {
         box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
     }
@@ -145,7 +137,7 @@
         font-size: 2.5rem;
     }
     @include media-breakpoint-up(lg) {
-        font-size: 3rem;
+        padding-right:0.5em;
     }
     @include media-breakpoint-up(xl) {
         font-size: 3.5rem;
@@ -156,7 +148,16 @@
     @include media-breakpoint-down(lg) {
         font-size: 2rem;
     }
+    @include media-breakpoint-down(sm) {
+        padding-bottom: 3em;
+    }
 }
+.resp-text.secondary-headers {
+    @include media-breakpoint-up(xl) {
+        padding-top: 2rem;
+    }
+}
+
 // code-navbar
 .code-navbar {
     display: block;
@@ -202,4 +203,13 @@
 }
 .modal-body {
     padding-bottom: 0;
+}
+.bpad {
+    padding-bottom: 15px;
+}
+// cards
+.mwidth {
+    @include media-breakpoint-up(lg) {
+        width: 18rem;
+    }
 }

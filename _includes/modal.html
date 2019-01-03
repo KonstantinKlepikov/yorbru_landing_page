@@ -7,14 +7,15 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body bpad">
                 <p class="text-dark h4">Опишите задачу и я отвечу в течение одного рабочего дня</p>
-                <form class="needs-validation" novalidate>
+                <form id="contact-form" action="https://yorb.ru/assets/data/contact.php" method="POST" class="needs-validation" novalidate>
                     <div class="form-group">
-                        <input type="email" class="form-control form-control" id="yorbInput" placeholder="email" required>
-                        <textarea type="text" class="form-control" id="yorbTextarea" rows="5" placeholder="краткое описание задачи" required></textarea>
+                        <input name="email" type="email" class="form-control" id="yorbInput" placeholder="email" required>
+                        <textarea name="message" type="text" class="form-control" id="yorbTextarea" rows="5" minlength="" maxlength="999" placeholder="краткое описание задачи" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-danger float-right">ОТПРАВИТЬ</button>
+                    <div id="success"></div>
+                    <button type="submit" id="yorbButton" class="btn btn-outline-danger float-right">ОТПРАВИТЬ</button>
                 </form>
                 <script>
                     (function() {
@@ -35,8 +36,6 @@
                         }, false);
                     })();
                 </script>
-            </div>
-            <div class="modal-footer">
             </div>
         </div>
     </div>

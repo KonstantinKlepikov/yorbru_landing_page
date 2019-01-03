@@ -1,5 +1,7 @@
 ---
 layout: default
+description: Решения для интернет-магазинов
+keywords: email-маркетинг
 ---
 {% include navbar.html %}
 {% include bottombar.html %}
@@ -9,10 +11,11 @@ layout: default
         <div class="container">
             <div class="row">
                 <div class="col-xl-6 offset-xl-6 col-lg-6 offset-lg-6">
-                    <p class="h4 text-xl-right text-lg-right">Меня зовут</p>
-                    <p class="h4 text-xl-right text-lg-right">Клепиков Константин</p>
-                    <p class="h4 text-xl-right text-lg-right">и я делаю</p>
-                    <p class="text-xl-right text-lg-right resp-text header-text">Email-маркетинг для интернет-магазинов</p>
+                    <p class="h5 text-xl-right text-lg-right pr-5">Меня зовут</p>
+                    <p class="h5 text-xl-right text-lg-right pr-5">Клепиков Константин</p>
+                    <p class="h5 text-xl-right text-lg-right pr-5">я помогаю</p>
+                    <p class="text-xl-right text-lg-right resp-text header-text pr-5">собрать лиды<br>
+                    для интернет-магазина</p>
                 </div>
             </div>
         </div>
@@ -23,7 +26,7 @@ layout: default
                 <div class="row">
                     <div class="col-md-5 code code-text">
                         <p class="resp-text">Email маркетинг</p>
-                        <p class="h5 d-none d-md-block d-lg-block d-xl-block">Выстраиваю схемы сбора лидов. Проектирую рассылки. Верстаю письма. Интегрирую. Запускаю.</p>
+                        <p class="h5 d-none d-md-block d-lg-block d-xl-block">Выстраиваю схемы сбора имейлов. Проектирую рассылки. Верстаю письма. Интегрирую. Запускаю.</p>
                     </div>
                     <div class="col-md-7 text-center code code-block">
                         <ul class="nav navbar-dark bg-light">
@@ -67,12 +70,12 @@ content="text/html; charset=utf-8"&gt;
             <div class="container">
                 <div class="row">
                     <div class="col-md-5 resp-block">
-                        <p class="resp-text">UX/UI</p>
+                        <p class="resp-text secondary-headers">UX/UI</p>
                         <p class="h5">Анализирую юзабилити, улучшаю интерфейсы и оптимизирую сбор лидов</p>
                     </div>
                     <div class="col-md-7 resp-block">
                         <img src="{{'/assets/img/uxui.png' | prepend: site.baseurl}}" class="rounded img-fluid mx-auto d-block" alt=" UX/UI ">
-                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -80,7 +83,7 @@ content="text/html; charset=utf-8"&gt;
             <div class="container">
                 <div class="row">
                     <div class="col-md-5 resp-block">
-                        <p class="resp-text">ML @ AI</p>
+                        <p class="resp-text secondary-headers">ML @ AI</p>
                         <p class="h5">Разрабатываю решения на основе технологий машинного обучения</p>
                     </div>
                     <div class="col-md-7 resp-block">
@@ -91,6 +94,6 @@ content="text/html; charset=utf-8"&gt;
         </div>
     </section>
     <section class="section">
-        <a href="">example</a>
+        {% include card.html %}
     </section>
 </div>

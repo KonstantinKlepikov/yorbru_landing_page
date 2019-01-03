@@ -3,18 +3,18 @@ RewriteBase /
 RewriteCond %{HTTP:X-HTTPS} !1
 RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
 
-#401  Авторизация не выполнена
-ErrorDocument 401 https://yorb.ru/error/401.html 
+#401 Авторизация не выполнена
+ErrorDocument 401 https://yorb.ru/error/404.html 
 #403  Доступ запрещен
-ErrorDocument 403 https://yorb.ru/error/403.html 
-#404  Страница не найдена
+ErrorDocument 403 https://yorb.ru/error/404.html 
+#404 Страница не найдена
 ErrorDocument 404 https://yorb.ru/error/404.html 
-#500  Внутренняя ошибка сервера
-ErrorDocument 500 https://yorb.ru/error/500.html
+#500 Внутренняя ошибка сервера
+ErrorDocument 500 https://yorb.ru/error/404.html
 
 Redirect 301 /rassilki.html https://yorb.ru/
 Redirect 301 /rassilki.html/ https://yorb.ru/
-
-
-
-
+Redirect 301 /primer-pisma.html https://yorb.ru/
+Redirect 301 /primer-pisma.html/ https://yorb.ru/
+Redirect 301 /uslovija.html https://yorb.ru/
+Redirect 301 /uslovija.html/ https://yorb.ru/

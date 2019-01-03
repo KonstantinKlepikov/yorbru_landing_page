@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        {% for pos in site.data.old_blog %}
+        <div class="col {{pos.hidden}}">
+            <div class="card mwidth">
+                <a href="{{pos.link}}"><img class="card-img-top" src="{{site.baseurl}}{{pos.imgurl}}" alt=" "></a>
+                <div class="card-body">
+                    <p class="card-text text-dark">{{ pos.text }}</p>
+                    <a href="{{pos.link}}" class="btn btn-outline-danger float-right">ЧИТАТЬ</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

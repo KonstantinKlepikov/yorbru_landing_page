@@ -1,89 +1,18 @@
-<!DOCTYPE html>
-<html lang="ru-Ru">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<meta name="description" content="Контент для email-рассылок ваших сайтов">
-	<meta name="keywords" content="">
-	<meta name="author" content="">
-    <title>Добро пожаловать!</title>
-	<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
-	<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
-    <!-- Bootstrap core CSS -->
-      <link href="../style/bootstrap.min.css" rel="stylesheet">
-      <!-- Bootstrap theme -->
-      <link href="../style/bootstrap-theme.min.css" rel="stylesheet">
-      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-      <link href="../style/ie10-viewport-bug-workaround.css" rel="stylesheet">
-    <!-- Bootstrap core CSS end -->
-	<!-- Custom CSS -->
-	  <link href="../style/custom/socicon.css" rel="stylesheet"> 
-	  <link href="../style/custom/custom.css" rel="stylesheet"> 
-	<!-- Custom CSS end --> 
-	<link href="../fonts/casper/casper.css" rel="stylesheet"> 
-</head>
-
-<body class="container_custom">
-  
-    <!-- Main -->	
-	<section  class="box_custom min-height-50_custom">
-		<div class="magnet-box_custom">
-			<div class="container text-center">
-				<h1>Добро пожаловать на <a href="../index.html">йорб</a>!</h1>
-				Ваша подписка подтверждена.
-				Спасибо! 
-				<div class="row fastmargin-top_custom fastmargin-bottom_custom">
-					<div class="text-center">
-						<a class="btn btn-red_custom btn-lg" role="button" href="https://yorb.ru">верстка и контент писем</a>
-						<a class="btn btn-grey_custom btn-lg" role="button" href="https://blog.yorb.ru">перейти в блог</a>
+---
+layout: default
+suburl: ../..
+---
+{% include navbar.html %}
+{% include modal.html %}
+<div id="fullpage" class="custom-hide">
+	<section class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<p class="text-center resp-text">Добро пожаловать!</p>
+						<p class="text-center">Ваша подписка подтверждена. <a href="{{'../../' | prepend: site.baseurl}}" class="text-white"><u>Перейти на главную</a></u></p>
 					</div>
-				</div>				
-			</div>
-		</div>
-    </section>
-   
-	<!-- footer -->
-    <footer class="footer_custom min-height-50_custom parallaxbackground_custom" style="background-image: url(../images/background/1000x669blackwall.jpg);">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6">
-				</div>
-				<div class="col-md-6">
-				    <p><a class="inversecolor_custom" href="https://yorb.ru/primer-pisma.html">Пример верстки</a> | <a class="inversecolor_custom" href="https://yorb.ru/uslovija.html">Подробные условия</a> | <a class="inversecolor_custom" href="https://blog.yorb.ru">Блог</a></p>
-					<h4 class="fastmargin-top_custom">Присоединяйтесь к нам в соц.сетях</h4>
-					<div class="socialbutton-background_custom">
-						<a href="https://www.facebook.com/yorb.ru/" class="socialbutton_custom socialbutton-round_custom socicon-bg-facebook">
-							<span class="socicon-facebook"></span>
-						</a>
-						<a href="https://vk.com/yorb_ru" class="socialbutton_custom socialbutton-round_custom socicon-bg-vkontakte">
-							<span class="socicon-vkontakte"></span>
-						</a>
-						<a href="https://twitter.com/yorb_ru" class="socialbutton_custom socialbutton-round_custom socicon-bg-twitter">
-							<span class="socicon-twitter"></span>
-						</a>
-						<a href="https://plus.google.com/communities/114955467095114093841" class="socialbutton_custom socialbutton-round_custom socicon-bg-google">
-							<span class="socicon-googleplus"></span>
-						</a>
-					</div>		    
-					<address class="inversecolor_custom">236038 Калининград, Еловая аллея, 28/10</a>
-					<br>
-					&#169; <span class="inversecolor_custom"><a href="https://yorb.ru" class="inversecolor_custom">yorb.ru</a></span> 2016</address>
 				</div>
 			</div>
-		</div>
-    </footer>
-	
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
-    <script src="../js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../js/ie10-viewport-bug-workaround.js"></script>	
-	<script src="../js/yorbscript.js"></script>		
-</body>
-</html>
+	</section>
+</div>
