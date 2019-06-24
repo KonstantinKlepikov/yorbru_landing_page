@@ -3,7 +3,7 @@
     <div class="row">
         {% for pos in site.data.old_blog %}
         <div class="col {{pos.hidden}}">
-            <div class="card mwidth">
+            <div class="card mwidth mx-auto">
                 <a href="{{pos.link}}"><img class="card-img-top" src="{{site.baseurl}}{{pos.imgurl}}" alt=" "></a>
                 <div class="card-body">
                     <p class="card-text text-dark">{{ pos.text }}</p>
